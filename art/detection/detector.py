@@ -41,7 +41,7 @@ class BinaryInputDetector(ClassifierNeuralNetwork, ClassifierGradients, Classifi
         Create a `BinaryInputDetector` instance which performs binary classification on input data.
 
         :param detector: The detector architecture to be trained and applied for the binary classification.
-        :type detector: :class:`.Classifier`
+        :type detector: :class:`.ClassifierNeuralNetwork`, :class:`.ClassifierGradients`, :class:`.Classifier`
         """
         super(BinaryInputDetector, self).__init__(clip_values=detector.clip_values,
                                                   channel_index=detector.channel_index,
